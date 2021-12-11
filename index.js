@@ -25,7 +25,7 @@ app.use("/api/auth" , authRoute);
 app.use("/api/posts" , postRoute);
 
 
-
-app.listen(8500,() =>{
-    console.log("1st backend server");
+let port = 8001;
+app.listen(port,() =>{
+    console.log("1st backend server on " + port);
 });
